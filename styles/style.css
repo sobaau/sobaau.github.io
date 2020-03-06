@@ -39,7 +39,11 @@ a:hover {
     background-color: #376fb8;
     color: white;
 }
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -64,7 +68,7 @@ a:hover {
 .para-one {
     border: 1px solid #000000;
     background-image: url(../img/background.jpg);
-    height: 50vh;
+    height: 40vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
