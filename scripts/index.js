@@ -1,13 +1,14 @@
-const load = () => {
-    const navbar = document.createElement('div');
-    const projects = document.createElement('div');
-    navbar.setAttribute('class','nav');
-    projects.setAttribute('class','projects');
-    const test = document.createElement('p');
-    document.getElementById('root').append(navbar);
-    document.getElementById('root').append(projects);
+const nav = document.getElementById('navbar');
+const stick = nav.offsetTop;
+
+const stickNav = () => {
+    if (window.pageYOffset >= stick) {
+        nav.classList.add('stick')
+    } else {
+        if (nav.classList.contains('stick')) {
+            nav.classList.remove('stick');
+        }
+    }
 }
 
-window.onload = () => {
-    load();
-}
+window.onscroll = () => stickNav();
