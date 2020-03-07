@@ -16,11 +16,10 @@ html {
     padding: 0px;
 }
 h1 {
-    display: inline-block; 
+    font-weight: bold;
 }
 
 h2 {
-    display: inline; 
     font-size: 20px;
     font-weight: bold;
 }
@@ -111,10 +110,13 @@ ul {
     width: 60%;
     height: 20vh;
 }
-.about, .edu, .skills, .contact, .projects {
+.about, .edu, .skills, .contact {
     display: flex;
     padding: 1% 20%; 
 
+}
+.projects {
+    padding: 1% 20%; 
 }
 .fl1{
     min-width: 70px;
