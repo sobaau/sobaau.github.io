@@ -15,7 +15,12 @@ html {
     margin: 0px;
     padding: 0px;
 }
+h1 {
+    display: inline-block; 
+}
+
 h2 {
+    display: inline; 
     font-size: 20px;
     font-weight: bold;
 }
@@ -27,7 +32,8 @@ a {
 a:link {
     color: white;
     text-decoration: none;
-    margin: 0
+    margin: 0;
+    font-weight: bold;
 }
 
 a:visited {
@@ -36,9 +42,14 @@ a:visited {
 }
 
 a:hover {
-    background-color: #376fb8;
-    color: white;
+    color: green;
 }
+
+p {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -47,11 +58,14 @@ ul {
 .wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
     width: 100%;
 }
 
 .navbar {
     display: flex;
+    align-items: center;
     border: 1px solid #000000;
     background-color: #4E3D42;
     width: 100%;
@@ -59,6 +73,23 @@ ul {
     position: fixed;
     top: 0;
     overflow: hidden;
+    box-shadow: 0 0 25px 0 black;
+    justify-content: space-between;
+}
+
+.navlinks {
+    float: right;
+}
+
+.navlinks li {
+    display: block;
+    float: left;
+    margin: 20px;
+}
+
+.navtitle {
+    margin-left: 10px;
+    color: aliceblue;
 }
 
 .stick {
@@ -67,44 +98,40 @@ ul {
 
 .para-one {
     border: 1px solid #000000;
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/IMG_20181223_160445.jpg);
     height: 40vh;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
 }
-
-.edu {
-    border: 1px solid #000000;
-    padding: 1% 5%;
+.para-one.non-h{
+    width: 60%;
+    height: 20vh;
 }
-
-.skills {
-    border: 1px solid #000000;
-    padding: 1% 5%;
-
-}
-
-.contact {
-    border: 1px solid #000000;
-    padding: 1% 5%;
-
-}
-
-.projects {
-    border: 1px solid #000000;
-    padding: 1% 5%;
-
-}
-
-.footer {
+.about, .edu, .skills, .contact, .projects {
     display: flex;
+    padding: 1% 20%; 
+
+}
+.fl1{
+    min-width: 70px;
+}
+
+footer {
     border: 1px solid #000000;
     background-color: #4E3D42;
     width: 100%;
     height: 2.5 rem;
-    position: fixed;
     overflow: hidden;
+    color: aliceblue;
+    flex-shrink: 0;
+    position:fixed;
+    bottom:0;
+}
+#footer-name{
+    position: relative;
+    left: 45%;
 }

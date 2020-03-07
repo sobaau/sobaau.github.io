@@ -1,94 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>-</title>
-  </head>
-  <body>
-    <div class="wrapper" id="root">
-      <div class="navbar" id="navbar">
-        <div class="navtitle">
-          <h1>David Preston</h1>
+    <script src="https://kit.fontawesome.com/50cbf3b41a.js" crossorigin="anonymous"></script>
+    <title>David Preston</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="navtitle">
+                <h1>David Preston</h1>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li>
+                        <a href="#education">Education & History</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="navlinks">
-          <ul>
-            <li>
-              <a href="#education">Education & History</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
+    </header>
+    <main>
+        <div class="para-one" id="about"></div>
+        <div class="wrapper">
+            <div class="about">
+                <div class="fl1">
+                    <h2>About</h2>
+                </div>
+                <div class="fl2">
+                    I am David Preston, a final year Bachelor of Computer Science student majoring in Software
+                    Development
+                    with demonstrated experience in IT Technical Support. I am interested in making the transition to
+                    software developer and as such, have developed various projects in a variety of frameworks which you
+                    can
+                    view below. I enjoy experimenting with new programming languages and frameworks in my spare time and
+                    always strive to evolve my knowledge in software development.
+                </div>
+            </div>
+            <div class="para-one non-h" id="education"></div>
+            <div class="edu">
+                <div>
+                    <h2>Work History</h2>
+                    <ul>
+                        <li>ICT Support Techinican</li>
+                        <li>2017 - Present</li>
+                        <li>Toowoomba Catholic Schools Office</li>
+                        <li>Toowoomba, QLD, Australia</li>
+                    </ul>
+                    <ul>
+                        <li>School Based ICT Support Technician</li>
+                        <li>2015 - 2016</li>
+                        <li>Education Queensland</li>
+                        <li>Mount Isa, QLD, Australia</li>
+                    </ul>
+                    <ul>
+                        <li>2015</li>
+                        <li>Desktop Engineer - IBM / ANZ Branch Refresh Project</li>
+                        <li>]Kordia Solutions</li>
+                        <li>Toowoomba, QLD, Australia</li>
+                    </ul>
+                    <ul>
+                        <li>2014</li>
+                        <li>Desktop Engineer - Westpac Branch Refresh Project</li>
+                        <li>Kordia Solutions</li>
+                        <li>Toowoomba, QLD, Australia</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Education</h2>
+                    <ul>
+                        <li>
+                            Bachelor of Computer Science (BCompSc), Majoring in Software Development
+                        </li>
+                        <li>
+                            2016 - Present
+                        </li>
+                        <li>
+                            The University of New England
+                        </li>
+                        <li>
+                            Armidale, NSW, Australia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="para-one non-h" id="skills"></div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <h3>Programming</h3>
+                <ul class="programming">
+                    <li>| C | C++ | Python | Node.JS |</li>
+                    <li>| Java | Scala | Processing |</li>
+                    <li>| HTML | JavaScript | TypeScript | React |</li>
+                    <li>| SQL | MangoDB |</li>
+                    <li>| Jenkins | Git | UML |</li>
+                </ul>
+                <h3>ICT</h3>
+                <ul class="ict">
+                    <li>| Azure AD | Intune | Office 365 |</li>
+                    <li>| DHCP | DNS | Active Directory |</li>
+                    <li>| Windows 7 - 10 | Server 2008 - 2019 |</li>
+                    <li>| Vendor Warrenty Repairs | ITIL |</li>
+                    <li>| Level 1 - 2 Support | Virtualisation |</li>
+                    <li>| Networked Switchs | Printers |</li>
+                </ul>
+                <p>
+                </p>
+            </div>
+            <div class="para-one non-h" id="projects"></div>
+            <div class="projects">
+                <h2>Projects</h2>
+                <div>
+                    <h3>Asteroids, Class project- Processing</h3>
+                    <img src="" alt="">
+                    <p>
+                        Classic Asteroid game made in the Processing language. Worked with two other students to create
+                        the
+                        game over the course of a month. Worked on and created the following compenets: <ul>
+                            <li>Base Game Rendering/Main Game Loop</li>
+                            <li>Star Map backgrond</li>
+                            <li>Physics/Collisions/Movement</li>
+                        </ul>
+                    </p>
+                    <a href="http://"></a>
+                </div>
+                <div>
+                    <h3>Reactships - Typescript/React/Express</h3>
+                    <img src="" alt="">
+                    <p>ReactShips is a clone of the classic board game Battle Ships. The game is built using React and
+                        Typescript on the front end and Express.js on the backend with MongoDB used for database
+                        storage.
+                        The front end and the backend communcaite using websockets to send game moves and chat messages.
+                    </p>
+                    <a href="http://"></a>
+                </div>
+                <div>
+                    <h3>2D Minecraft, Class project - Java/JavaFX</h3>
+                    <img src="" alt="">
+                    <p>This project was a class wide effort over the duration of 3 months. In this project the class was
+                        tasked with creating a 2D minecraft with the emphisis on Test Driven Deisng and CD/CI using
+                        Jenkins
+                        and Gitlab. The class was split into teams of 4 with a total of 18 groups.
+                    </p>
+                    <p>
+                        Within my team I worked on a JavaFX test window that enabled us to test our feature before it
+                        was
+                        merged into the master branch, Along with this I worked on the Physics module to create basic
+                        forces
+                        such things as gravity and water.
+                    </p>
+                    <img src="" alt="">
+                    <a href="http://"></a>
+                </div>
+            </div>
+            <div class="para-one non-h"></div>
+            <div class="contact">
+                <h2 id="contact">Contact</h2>
+                <i class="fab fa-linkedin fa-7x"></i>
+                <i class="fas fa-at fa-7x"></i>
+            </div>
         </div>
-      </div>
-      <div class="para-one"></div>
-      <div class="edu">
-        <h2 id="education">Education</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-          repellat odit quibusdam minus dolorem fugit voluptates tempore velit
-          repellendus suscipit?
-        </p>
-      </div>
-      <div class="para-one"></div>
-      <div class="skills">
-        <h2 id="skills">Skills</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-          tempore perferendis. Voluptatibus, amet harum. Eaque minima vitae ea
-          iure harum facilis odit quos at voluptate commodi praesentium, sit
-          alias quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Eligendi dolores accusamus, maiores hic, reprehenderit, optio repellat
-          cupiditate expedita ipsam deleniti dolorem voluptatibus sed quae!
-          Harum nesciunt molestias ducimus exercitationem culpa voluptatibus
-          nemo qui accusamus praesentium aliquam maxime repellendus dolores
-          totam repudiandae, nostrum quis asperiores perspiciatis earum
-          corporis. Quo delectus quae asperiores excepturi nobis cum ullam!
-          Facilis laborum laudantium repellat nemo doloremque eum nam magnam
-          nihil tempore, iusto vero animi explicabo non, harum magni. Officiis
-          nesciunt fugit ex officia! Molestias dolorum reprehenderit quibusdam
-          deserunt excepturi veniam delectus. Impedit illum odit perspiciatis
-          dolore alias voluptate, repudiandae maxime dolor autem accusamus esse
-          asperiores.
-        </p>
-      </div>
-      <div class="para-one"></div>
-      <div class="projects">
-        <h2 id="projects">Projects</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione
-          maxime rem enim ex eos recusandae corrupti inventore. Possimus
-          temporibus reprehenderit omnis esse eos quas, iusto laudantium ratione
-          excepturi ex!
-        </p>
-      </div>
-      <div class="para-one"></div>
-      <div class="contact">
-        <h2 id="contact">Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          voluptatem laboriosam repellendus id assumenda beatae in quidem esse
-          ullam error deserunt, aspernatur vero modi quisquam ipsa tenetur
-          facere velit exercitationem sequi iure. Voluptas dicta deleniti nam
-          rem, itaque odio mollitia dolorem porro fugiat esse quia vitae vero
-          explicabo at nesciunt minima alias quasi consectetur molestiae labore
-          tenetur sed, rerum in libero? Voluptatum nihil sit repellat quidem
-          ratione qui quam iste odit quo. Quaerat suscipit nam autem quod nobis
-          rerum ab quos molestias. Adipisci, impedit laborum natus, in itaque
-          expedita hic, libero fugiat quisquam quos alias eum? Quos magnam quod
-          laborum.
-        </p>
-      </div>
-      <div class="footer"></div>
-    </div>
+    </main>
+    <footer>
+        <div id="footer-name">© David Preston 2020</div>
+    </footer>
     <script src="scripts/index.js"></script>
-  </body>
+</body>
+
 </html>
