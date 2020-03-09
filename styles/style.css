@@ -4,7 +4,6 @@ body {
     color: #000000;
     line-height: 1.5;
     font-size: 14px;
-    word-break: break-all;
 }
 
 html {
@@ -107,19 +106,44 @@ ul {
     
 }
 .para-one.non-h{
-    width: 60%;
-    height: 20vh;
+    width:70vw;
+    height: 5vh;
 }
-.about, .edu, .skills, .contact {
+
+.about, .edu, .skills, .contact, .projects {
     display: flex;
-    padding: 1% 20%; 
+    width: 60vw;
+    overflow-wrap: normal;
 
 }
-.projects {
-    padding: 1% 20%; 
-}
 .fl1{
-    min-width: 70px;
+    width: 150px;
+}
+.fl2 {
+    width: 800px;
+}
+
+.edu {
+    flex-direction: column;
+}
+
+.edu ul {
+    margin: 0 0 10px 0;
+}
+
+.edu #company, #academia{
+    font-size: larger;
+}
+.work, .education {
+    display: flex;
+}
+.skills{
+    text-align: center;
+}
+
+.projects img{
+    height: auto;
+    width: 400px;
 }
 
 footer {
@@ -133,6 +157,7 @@ footer {
     position:fixed;
     bottom:0;
 }
+
 #footer-name{
     position: relative;
     left: 45%;
