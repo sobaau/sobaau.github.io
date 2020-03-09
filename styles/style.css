@@ -1,164 +1,199 @@
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-style: normal;
-    color: #000000;
-    line-height: 1.5;
-    font-size: 14px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: normal;
+  color: #000000;
+  line-height: 1.5;
+  font-size: 14px;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
+
 h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 h2 {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:link {
-    color: white;
-    text-decoration: none;
-    margin: 0;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  font-weight: bold;
 }
 
 a:visited {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
-    color: green;
+  color: green;
 }
 
 p {
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /*centers items on the line (the x-axis by default)*/
-    align-items: center; /*centers items on the cross-axis (y by default)*/
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*centers items on the line (the x-axis by default)*/
+  align-items: center;
+  /*centers items on the cross-axis (y by default)*/
+  width: 100%;
+  background-color: #F9EAE1;
+
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    border: 1px solid #000000;
-    background-color: #4E3D42;
-    width: 100%;
-    height: 2.5 rem;
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-    box-shadow: 0 0 25px 0 black;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  background-color: #7D4F50;
+  /*4E3D42*/
+  width: 100%;
+  height: 2.5 rem;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  box-shadow: 0 0 25px 0 black;
+  justify-content: space-between;
 }
 
 .navlinks {
-    float: right;
+  float: right;
 }
 
 .navlinks li {
-    display: block;
-    float: left;
-    margin: 20px;
+  display: block;
+  float: left;
+  margin: 20px;
 }
 
 .navtitle {
-    margin-left: 10px;
-    color: aliceblue;
+  margin-left: 10px;
+  color: aliceblue;
 }
 
 .stick {
-    width: 100%;
+  width: 100%;
 }
 
 .para-one {
-    border: 1px solid #000000;
-    background-image: url(../img/IMG_20181223_160445.jpg);
-    height: 40vh;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-.para-one.non-h{
-    width:70vw;
-    height: 5vh;
+  border: 1px solid #000000;
+  background-image: url(../img/IMG_20181223_160445.jpg);
+  height: 40vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.about, .edu, .skills, .contact, .projects {
-    display: flex;
-    width: 60vw;
-    overflow-wrap: normal;
+.para-one.non-h {
+  width: 80vw;
+  height: 10vh;
+}
 
+.about,
+.edu,
+.skills,
+.contact,
+.projects {
+  display: flex;
+  width: 60vw;
+  overflow-wrap: normal;
+  
 }
-.fl1{
-    width: 150px;
+
+.fl1 {
+  width: 190px;
+  text-align: center;
+  background-color: #FDFEFD;
 }
+
 .fl2 {
-    width: 800px;
-}
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #FDFEFD;
+  padding-left: 150px;
 
+
+}
 .edu {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .edu ul {
-    margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
-.edu #company, #academia{
-    font-size: larger;
-}
-.work, .education {
-    display: flex;
-}
-.skills{
-    text-align: center;
+.edu #company,
+#academia {
+  font-size: larger;
 }
 
-.projects img{
-    height: auto;
-    width: 400px;
+.work,
+.education {
+  display: flex;
 }
 
+.skill-wrapper {
+  padding-left: 150px;
+  background-color: #FDFEFD;
+  width: 100%;
+}
+.projects .fl2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects img {
+  height: auto;
+  width: 400px;
+}
+.projects h3{
+  text-align: center;
+}
+.contact {
+  justify-content: center;
+  align-items: center;
+}
 footer {
-    border: 1px solid #000000;
-    background-color: #4E3D42;
-    width: 100%;
-    height: 2.5 rem;
-    overflow: hidden;
-    color: aliceblue;
-    flex-shrink: 0;
-    position:fixed;
-    bottom:0;
+  border: 1px solid #000000;
+  background-color: #4E3D42;
+  width: 100%;
+  height: 2.5 rem;
+  overflow: hidden;
+  color: aliceblue;
+  flex-shrink: 0;
+  bottom: 0;
 }
 
-#footer-name{
-    position: relative;
-    left: 45%;
+#footer-name {
+  position: relative;
+  left: 45%;
 }
