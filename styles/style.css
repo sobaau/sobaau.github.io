@@ -51,7 +51,6 @@ ul {
 nav {
   display: flex;
   align-items: center;
-  border: 1px solid #000000;
   background-color: #7d4f50;
   width: 100%;
   height: 8vh;
@@ -110,9 +109,7 @@ nav h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*centers items on the line (the x-axis by default)*/
   align-items: center;
-  /*centers items on the cross-axis (y by default)*/
   width: 100%;
   background-color: #f9eae1;
 }
@@ -318,18 +315,21 @@ footer {
     justify-content: center;
     align-items: center;
   }
-.projects .fl1{
-  margin-bottom: -10px;
-}
 
-.projects h3{
-  text-align: center;
-  padding-top: 10px;
-}
-.project-disc{
-  margin-bottom: 10px;
-  padding-top: 0px;
-}
+  .projects .fl1 {
+    margin-bottom: -10px;
+  }
+
+  .projects h3 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .project-disc {
+    margin-bottom: 10px;
+    padding-top: 0px;
+  }
+
   .contact .fab,
   .contact .fas {
     font-size: 40px;
@@ -356,9 +356,11 @@ footer {
       align-self: center;
       transform: translateX(100%);
     }
-    .navslide{
+
+    .navslide {
       transition: transform 0.5s ease-in;
     }
+
     .para-one.h-one,
     .para-one.h-two,
     .para-one.h-three,
@@ -391,6 +393,7 @@ footer {
       display: flex;
       flex-direction: column;
     }
+
     .projects br {
       margin: 10px 0;
     }
@@ -447,3 +450,28 @@ footer {
     transform: rotate(45deg) translate(-5px, -6px);
 
   }
+}
+.load-wrapper{
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  margin: 0 auto;
+  margin-top: 25%;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.hidecontent{
+  display: none;
+}

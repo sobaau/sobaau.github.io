@@ -1,5 +1,3 @@
-console.log(screen.width)
-
 const navSlide = () => {
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.navlinks');
@@ -22,6 +20,11 @@ const navSlide = () => {
       nav.classList.toggle('nav-active');
     }
   });
+  navLinks.forEach((li) =>{
+    li.addEventListener('click', ()=>{
+      navResize();
+    });
+  });
 }
 navSlide();
 const navResize = () => {
@@ -36,7 +39,7 @@ const navResize = () => {
       link.style.animation = '';
     })
   }
-  if(!nav.classList.contains('navslide')){
+  if (!nav.classList.contains('navslide')) {
     document.querySelector('.navlinks').classList.add('navslide')
   }
 
@@ -47,6 +50,19 @@ window.onresize = () => {
   navResize();
 }
 
-window.onload = () =>{
+window.onload = () => {
   document.querySelector('.navlinks').classList.add('navslide')
 }
+
+window.addEventListener('load', () => {
+  console.log("Page loaded!")
+  const hidden = document.querySelectorAll('.hidecontent')
+  const loader = document.getElementById('load-wrapper')
+  const hiddenSize = hidden.length;
+  for (var i = 0; i < hiddenSize; i++) {
+    console.log('hidden is ' + hidden.length + ' big')
+    console.log("Loop number " + i)
+    hidden[i].classList.toggle('hidecontent');
+  }
+  loader.parentNode.removeChild(loader);
+})
