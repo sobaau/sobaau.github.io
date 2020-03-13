@@ -42,11 +42,6 @@ a {
   text-decoration: none;
 }
 
-p {
-  margin-top: 0.5%;
-  margin-bottom: 0.5%;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -295,14 +290,14 @@ footer {
   .fl1 {
     width: 100%;
     min-width: 140px;
-    padding: 10px 0px;
+    padding: 5px 0px;
     text-align: center;
     background-color: #fdfefd;
   }
 
   .fl2 {
     width: 100%;
-    padding: 12px 0px;
+    padding: 0;
     background-color: #fdfefd;
   }
 
@@ -323,7 +318,18 @@ footer {
     justify-content: center;
     align-items: center;
   }
+.projects .fl1{
+  margin-bottom: -10px;
+}
 
+.projects h3{
+  text-align: center;
+  padding-top: 10px;
+}
+.project-disc{
+  margin-bottom: 10px;
+  padding-top: 0px;
+}
   .contact .fab,
   .contact .fas {
     font-size: 40px;
@@ -349,9 +355,10 @@ footer {
       flex-direction: column;
       align-self: center;
       transform: translateX(100%);
+    }
+    .navslide{
       transition: transform 0.5s ease-in;
     }
-
     .para-one.h-one,
     .para-one.h-two,
     .para-one.h-three,
@@ -384,7 +391,6 @@ footer {
       display: flex;
       flex-direction: column;
     }
-
     .projects br {
       margin: 10px 0;
     }
@@ -401,11 +407,11 @@ footer {
     .project-img {
       align-items: center;
       width: 100%;
-      padding: 15px;
+      padding: 15px 15px 0px 15px;
     }
 
     .project-disc {
-      padding: 15px
+      padding: 0px 15px 15px 15px;
     }
 
     .projects p {
@@ -414,7 +420,6 @@ footer {
   }
 
   .nav-active {
-    transition: transform 0.5s ease-in;
     transform: translateX(0%);
   }
 
