@@ -11,34 +11,35 @@
 </head>
 
 <body>
-  <header>
-    <div class="navbar" id="navbar">
-      <div class="navtitle">
+  <nav>
+      <div>
         <h1>David Preston</h1>
       </div>
-      <div class="navlinks">
-        <ul>
-          <li><a href="#about">About</a></li>
+        <ul class="navlinks">
+          <li><a data-page="about" href="#">About</a></li>
           <li>
-            <a href="#education">Education & History</a>
+            <a <a data-page="edu" href="#">Education & History</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a <a data-page="skills" href="#">Skills</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a <a data-page="projects" href="#">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a <a data-page="contact" href="#">Contact</a>
           </li>
         </ul>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-    </div>
-  </header>
+  </nav>
   <main>
     <div class="para-one" id="about"></div>
     <div class="wrapper">
-      <div class="about">
+      <section class="about">
         <div class="fl1">
           <h2>About</h2>
         </div>
@@ -51,11 +52,11 @@
           view below. I enjoy experimenting with new programming languages and frameworks in my spare time and
           always strive to evolve my knowledge in software development.
         </div>
-      </div>
+      </section>
       <div class="para-one h-one" id="education"></div>
-      <div class="edu">
+      <section class="edu">
         <div class="work">
-          <div class="fl1" id ="work-hist">
+          <div class="fl1" id="work-hist">
             <h2>Work History</h2>
           </div>
           <div class="fl2">
@@ -107,9 +108,9 @@
           </div>
 
         </div>
-      </div>
+      </section>
       <div class="para-one h-two" id="skills"></div>
-      <div class="skills">
+      <section class="skills">
         <div class="fl1">
           <h2>Skills</h2>
         </div>
@@ -132,9 +133,9 @@
             <li> Networked Switches | Printers</li>
           </ul>
         </div>
-      </div>
+      </section>
       <div class="para-one h-three" id="projects"></div>
-      <div class="projects">
+      <section class="projects">
         <div class="fl1">
           <h2>Projects</h2>
         </div>
@@ -254,16 +255,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="para-one h-four" id="contact"></div>
-      <div class="contact">
-        <div>
-          <i class="fab fa-linkedin fa-7x"></i>
-        </div>
-        <div>
-          <i class="fas fa-at fa-7x"></i>
-        </div>
-      </div>
+      <section class="contact">
+        <i class="fab fa-linkedin fa-7x"></i>
+        <i class="fas fa-at fa-7x"></i>
+      </section>
     </div>
   </main>
   <footer>
