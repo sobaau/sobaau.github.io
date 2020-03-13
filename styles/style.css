@@ -37,6 +37,7 @@ h3 {
   font-size: 20px;
   font-style: italic;
 }
+
 a {
   text-decoration: none;
 }
@@ -65,6 +66,7 @@ nav {
   box-shadow: 0 0 25px 0 black;
   justify-content: space-between;
 }
+
 nav a:link {
   color: white;
   text-decoration: none;
@@ -80,6 +82,7 @@ nav a:visited {
 nav a:hover {
   color: black;
 }
+
 .navlinks {
   display: flex;
   width: 50%;
@@ -95,9 +98,11 @@ nav h1 {
   color: aliceblue;
   letter-spacing: 5px;
 }
+
 .hamburger {
   display: none;
 }
+
 .hamburger div {
   background-color: aliceblue;
   width: 25px;
@@ -105,6 +110,7 @@ nav h1 {
   margin: 5px;
   transition: all 0.3s ease;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -131,21 +137,25 @@ nav h1 {
   height: 20vh;
   background-image: url(../img/IMG_20181223_143413.jpg);
 }
+
 .para-one.h-two {
   width: 60%;
   height: 20vh;
   background-image: url(../img/IMG_20181223_160810.jpg);
 }
+
 .para-one.h-three {
   width: 60%;
   height: 20vh;
   background-image: url(../img/IMG_20181223_161559.jpg);
 }
+
 .para-one.h-four {
   width: 60%;
   height: 20vh;
   background-image: url(../img/IMG_20181223_161559.jpg);
 }
+
 .about,
 .edu,
 .skills,
@@ -156,9 +166,11 @@ nav h1 {
   overflow-wrap: normal;
   text-align: center;
 }
+
 .about {
   text-align: start;
 }
+
 .fl1 {
   width: 20%;
   min-width: 140px;
@@ -172,6 +184,7 @@ nav h1 {
   padding: 12px 0px;
   background-color: #fdfefd;
 }
+
 .edu {
   flex-direction: column;
 }
@@ -194,9 +207,11 @@ nav h1 {
 .skills ul {
   padding-bottom: 10px;
 }
+
 .skills li {
   margin: 10px;
 }
+
 .skills .fl2 h3 {
   padding-bottom: 10px;
 }
@@ -206,28 +221,35 @@ nav h1 {
   flex-wrap: wrap;
   text-align: start;
 }
+
 .projects br {
   margin: 10px 0;
 }
+
 .projects img {
   height: auto;
   width: 100%;
 }
+
 .projects h3 {
   text-align: left;
 }
+
 .project-img {
   float: left;
   width: 50%;
   padding: 15px 15px 15px 0px;
 }
+
 .project-disc {
   padding-left: 100px;
   padding-top: 15px;
 }
+
 .projects p {
   padding: 2% 0;
 }
+
 .contact {
   justify-content: center;
   align-items: center;
@@ -250,17 +272,26 @@ footer {
 }
 
 @media only screen and (max-width: 1038px) {
+
+  .para-one.h-one,
+  .para-one.h-two,
+  .para-one.h-three,
+  .para-one.h-four {
+    width: 80%;
+  }
+
   .about,
   .edu,
   .skills,
   .contact,
   .projects {
     display: flex;
-    width: 60%;
+    width: 80%;
     overflow-wrap: normal;
     text-align: center;
     flex-direction: column;
   }
+
   .fl1 {
     width: 100%;
     min-width: 140px;
@@ -274,6 +305,7 @@ footer {
     padding: 12px 0px;
     background-color: #fdfefd;
   }
+
   .edu #company,
   #academia {
     font-size: larger;
@@ -285,23 +317,28 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
   .contact {
     display: inline-block;
     justify-content: center;
     align-items: center;
   }
+
   .contact .fab,
   .contact .fas {
     font-size: 40px;
   }
+
   @media screen and (max-width: 750px) {
     body {
       overflow-x: hidden;
     }
+
     nav {
       border-style: none;
       overflow: visible;
     }
+
     .navlinks {
       position: absolute;
       right: 0px;
@@ -314,60 +351,94 @@ footer {
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
     }
+
+    .para-one.h-one,
+    .para-one.h-two,
+    .para-one.h-three,
+    .para-one.h-four {
+      width: 100%;
+    }
+
+    .about,
+    .edu,
+    .skills,
+    .contact,
+    .projects {
+      width: 100%;
+    }
+
     .navlinks li {
       opacity: 0;
     }
+
     .hamburger {
       display: block;
-      cursor: pointer;  
+      cursor: pointer;
     }
-  .project-wrapper{
-    display: flex;
-    flex-direction: column;  }
-  .projects br {
-    margin: 10px 0;
-  }
-  .projects img {
-    height: auto;
-    width: 100%;
-  }
-  .projects h3 {
-    text-align: center;
-  }
-  .project-img {
-    align-items: center;
-    width: 100%;
-    padding: 15px;
-  }
-  .project-disc {
-    padding: 15px
-  }
-  .projects p {
-    padding: 2% 0;
-  }
-}
-.nav-active{
-  transition: transform 0.5s ease-in;
-  transform: translateX(0%);
-}
-@keyframes navLinkFade{
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
 
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-  opacity: 0;
-}
-.toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);
-  
-}
+    .wrapper {
+      width: ;
+    }
+
+    .project-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .projects br {
+      margin: 10px 0;
+    }
+
+    .projects img {
+      height: auto;
+      width: 100%;
+    }
+
+    .projects h3 {
+      text-align: center;
+    }
+
+    .project-img {
+      align-items: center;
+      width: 100%;
+      padding: 15px;
+    }
+
+    .project-disc {
+      padding: 15px
+    }
+
+    .projects p {
+      padding: 2% 0;
+    }
+  }
+
+  .nav-active {
+    transition: transform 0.5s ease-in;
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
+  }
