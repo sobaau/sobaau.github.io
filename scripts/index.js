@@ -55,13 +55,10 @@ window.onload = () => {
 }
 
 window.addEventListener('load', () => {
-  console.log("Page loaded!")
   const hidden = document.querySelectorAll('.hidecontent')
   const loader = document.getElementById('load-wrapper')
   const hiddenSize = hidden.length;
   for (var i = 0; i < hiddenSize; i++) {
-    console.log('hidden is ' + hidden.length + ' big')
-    console.log("Loop number " + i)
     hidden[i].classList.toggle('hidecontent');
   }
   loader.parentNode.removeChild(loader);

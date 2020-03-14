@@ -247,7 +247,34 @@ nav h1 {
   align-items: center;
 }
 
+.projects a:link {
+  float: right;
+  padding-right: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.projects a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+.contact {
+  justify-content: center;
+  align-items: center;
+}
+
+.contact a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
 footer {
+  display: flex;
   border: 1px solid #000000;
   background-color: #7d4f50;
   width: 100%;
@@ -256,12 +283,11 @@ footer {
   color: aliceblue;
   flex-shrink: 0;
   bottom: 0;
+  align-content: center;
+  justify-content: center;
 }
 
-#footer-name {
-  position: relative;
-  left: 45%;
-}
+
 
 @media only screen and (max-width: 1038px) {
 
@@ -355,6 +381,7 @@ footer {
       flex-direction: column;
       align-self: center;
       transform: translateX(100%);
+      width: 30%;
     }
 
     .navslide {
@@ -448,7 +475,9 @@ footer {
 
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-
+  }
+  .projects a:link{
+    float: inline-start;
   }
 }
 .load-wrapper{
