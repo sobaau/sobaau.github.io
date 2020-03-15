@@ -1,3 +1,11 @@
+
+const clearBar = () => {
+  window.location.replace("#");
+  if (typeof window.history.replaceState == 'function') {
+    history.replaceState({}, '', window.location.href.slice(0, -1));
+  }
+}
+
 const navSlide = () => {
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.navlinks');
@@ -20,13 +28,13 @@ const navSlide = () => {
       nav.classList.toggle('nav-active');
     }
   });
-  navLinks.forEach((li) =>{
-    li.addEventListener('click', ()=>{
+  navLinks.forEach((li) => {
+    li.addEventListener('click', () => {
       navResize();
     });
   });
 }
-navSlide();
+
 const navResize = () => {
   const nav = document.querySelector('.navlinks');
   const hamburger = document.querySelector('.hamburger');
@@ -37,12 +45,11 @@ const navResize = () => {
     hamburger.classList.toggle('toggle');
     navLinks.forEach((link, index) => {
       link.style.animation = '';
-    })
+    });
   }
   if (!nav.classList.contains('navslide')) {
-    document.querySelector('.navlinks').classList.add('navslide')
+    document.querySelector('.navlinks').classList.add('navslide');
   }
-
 }
 
 window.onresize = () => {
@@ -50,16 +57,39 @@ window.onresize = () => {
   navResize();
 }
 
-window.onload = () => {
-  document.querySelector('.navlinks').classList.add('navslide')
+const setNav = () => {
+  window.addEventListener('load', () => {
+    const hidden = document.querySelectorAll('.hidecontent');
+    const loader = document.getElementById('load-wrapper');
+    const hiddenSize = hidden.length;
+    clearBar();
+    for (var i = 0; i < hiddenSize; i++) {
+      hidden[i].classList.toggle('hidecontent');
+    }
+    loader.parentNode.removeChild(loader);
+    document.querySelector('.navlinks').classList.add('navslide');
+  });
 }
 
-window.addEventListener('load', () => {
-  const hidden = document.querySelectorAll('.hidecontent')
-  const loader = document.getElementById('load-wrapper')
-  const hiddenSize = hidden.length;
-  for (var i = 0; i < hiddenSize; i++) {
-    hidden[i].classList.toggle('hidecontent');
-  }
-  loader.parentNode.removeChild(loader);
-})
+const navClear = () => {
+  const navLinks = document.querySelectorAll('.navlinks li');
+  navLinks.forEach((li) => {
+    li.classList.remove('clicked');
+  });
+}
+
+const navHighlight = () => {
+  const navLinks = document.querySelectorAll('.navlinks li');
+  navLinks.forEach((li) => {
+    li.addEventListener('click', () => {
+      navClear();
+      clearBar();
+      li.classList.toggle('clicked')
+    });
+  });
+}
+
+
+navHighlight();
+navSlide();
+setNav();

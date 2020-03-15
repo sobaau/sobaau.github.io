@@ -74,7 +74,11 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: black;
+  color: rgb(255, 188, 188);
+}
+
+.clicked a:link {
+  color: rgb(255, 188, 188);
 }
 
 .navlinks {
@@ -116,6 +120,7 @@ nav h1 {
 
 .para-one {
   background-image: url(../img/IMG_20181223_160445.jpg);
+  margin-top: 8vh;
   height: 40vh;
   width: 100%;
   background-attachment: fixed;
@@ -168,6 +173,7 @@ nav h1 {
   min-width: 140px;
   padding: 10px 0px;
   text-align: center;
+  letter-spacing: 2px;
   background-color: #fdfefd;
 }
 
@@ -258,6 +264,9 @@ nav h1 {
   color: #000000;
   text-decoration: none;
 }
+.projects a:hover {
+  font-weight: bold;
+}
 .contact {
   justify-content: center;
   align-items: center;
@@ -287,7 +296,43 @@ footer {
   justify-content: center;
 }
 
+@media only screen and (max-width: 1750px){
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .projects br {
+    margin: 10px 0;
+  }
+
+  .projects img {
+    height: auto;
+    width: 100%;
+  }
+
+  .projects h3 {
+    text-align: center;
+  }
+
+  .project-img {
+    align-items: center;
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+  }
+
+  .project-disc {
+    padding: 0px 15px 15px 15px;
+  }
+
+  .projects p {
+    padding: 2% 0;
+  }
+}
 
 @media only screen and (max-width: 1038px) {
 
@@ -439,7 +484,6 @@ footer {
       width: 100%;
       padding: 15px 15px 0px 15px;
     }
-
     .project-disc {
       padding: 0px 15px 15px 15px;
     }
@@ -477,7 +521,7 @@ footer {
     transform: rotate(45deg) translate(-5px, -6px);
   }
   .projects a:link{
-    float: inline-start;
+    float: right;
   }
 }
 .load-wrapper{
