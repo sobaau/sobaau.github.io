@@ -183,7 +183,7 @@ nav h1 {
 
 .fl2 {
   width: 100%;
-  padding: 12px 0px;
+  padding: 12px 10px 12px 0px;
   background-color: #fdfefd;
 }
 
@@ -370,6 +370,7 @@ footer {
   .fl2 {
     width: 100%;
     padding: 0;
+    padding: 0px 10px 0px 10px;
     background-color: #fdfefd;
   }
 
