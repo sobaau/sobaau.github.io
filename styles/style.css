@@ -130,24 +130,28 @@ nav h1 {
 }
 
 .para-one.h-one {
+  margin-top: 0;
   width: 60%;
   height: 20vh;
   background-image: url(../img/IMG_20181223_143413.jpg);
 }
 
 .para-one.h-two {
+  margin-top: 0;
   width: 60%;
   height: 20vh;
   background-image: url(../img/IMG_20181223_160810.jpg);
 }
 
 .para-one.h-three {
+  margin-top: 0;
   width: 60%;
   height: 20vh;
   background-image: url(../img/IMG_20181223_161559.jpg);
 }
 
 .para-one.h-four {
+  margin-top: 0;
   width: 60%;
   height: 20vh;
   background-image: url(../img/IMG_20181223_161559.jpg);
