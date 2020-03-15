@@ -5,7 +5,6 @@ const popOut = () => {
   const projectImgs = document.querySelectorAll('.project-img img')
 
   projectImgs.forEach((img) => {
-    console.log(img)
     img.addEventListener('click', () => {
       modal.style.display = "block";
       modalImg.src = img.src;
