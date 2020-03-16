@@ -275,6 +275,10 @@ nav h1 {
 .contact {
   justify-content: center;
   align-items: center;
+  height: fit-content;
+  width: fit-content;
+  font-size: 60%;
+  padding: 10px 0px;
 }
 
 .contact a:link {
@@ -286,7 +290,6 @@ nav h1 {
   color: #000000;
   text-decoration: none;
 }
-
 footer {
   display: flex;
   border: 1px solid #000000;
@@ -370,7 +373,7 @@ footer {
   .fl2 {
     width: 100%;
     padding: 0;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 10px 10px;
   }
 
   .edu #company,
