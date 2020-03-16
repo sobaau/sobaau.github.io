@@ -84,7 +84,7 @@ const navHighlight = () => {
     li.addEventListener('click', () => {
       navClear();
       clearBar();
-      li.classList.toggle('clicked')
+      li.classList.add('clicked')
     });
   });
 }
