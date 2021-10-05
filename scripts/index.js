@@ -1,4 +1,3 @@
-
 const clearBar = () => {
   window.location.replace("#");
   if (typeof window.history.replaceState == 'function') {
@@ -88,7 +87,6 @@ const navHighlight = () => {
     });
   });
 }
-
 
 navHighlight();
 navSlide();
