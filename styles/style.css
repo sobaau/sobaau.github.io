@@ -271,7 +271,9 @@ nav h1 {
 }
 
 .projects a:hover {
-  font-weight: bold;
+  font-weight: normal;
+  color: #581a1a;
+  text-decoration: none;
 }
 
 .contact {
